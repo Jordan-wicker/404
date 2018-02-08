@@ -4,22 +4,29 @@ body {
 
 code {
   font-size: 5em;
-  color: rgba(95%, 43%, 9%, 1);
-  text-align: center;
+  color: #19B5FE;
+  text-align: left;
   display: block;
   position: relative;
   top: 200px;
-  text-shadow: 0 0 35px rgba(95%, 43%, 9%, 1);
-  -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+  text-shadow: 0 0 35px #19B5FE;
 }
 
 code span {
-  color: rgba(100%, 100%, 100%, 1);
+  color: #fff;
 }
 
 body {
-  background: #000;
+  background: rgb(19, 26, 34);
 }
 
+b {
+animation-name: blinkCursor;
+animation-iteration-count: infinite;
+animation-timing-function: cubic-bezier(1,0,0,1);
+animation-duration: 1s;
+}
 
+@keyframes blinkCursor { 
+from { opacity: 1.0 } to { opacity: 0.0 }
 }
